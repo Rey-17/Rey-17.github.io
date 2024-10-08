@@ -3,132 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto y Blog</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 20px;
-            color: #333;
-            line-height: 1.6;
-            background: #f8f8f8;
-        }
-        header, footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: #fff;
-            margin-bottom: 20px;
-        }
-        h2 {
-            font-size: 1.5em;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .section {
-            background: #fff;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-        label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-        input, textarea, button {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-        button {
-            background: #333;
-            color: #fff;
-            cursor: pointer;
-            border: none;
-        }
-        button:hover {
-            background: #444;
-        }
-        .entry {
-            margin: 15px 0;
-            padding: 10px;
-            background: #f4f4f4;
-            border-left: 3px solid #333;
-        }
-    </style>
+    <title>Reynaldo Villarreal</title>
 </head>
 <body>
 
 <header>
-    <h1>Contacto & Blog Personal</h1>
+    <h1>Reynaldo Villarreal</h1>
 </header>
 
 <div class="container">
-    <section class="section">
-        <h2>Contacto</h2>
-        <p><strong>Nombre:</strong> Reynaldo Villarreal</p>
-        <p><strong>Email:</strong> reynaldo@example.com</p>
-        <p><strong>Teléfono:</strong> +507 1234-5678</p>
-        <p><strong>Ubicación:</strong> Ciudad de Panamá, Panamá</p>
-    </section>
-
-    <section class="section">
-        <h2>Subir Nueva Entrada</h2>
-        <form id="blogForm">
-            <label for="title">Título:</label>
-            <input type="text" id="title" name="title" required>
-
-            <label for="content">Contenido:</label>
-            <textarea id="content" name="content" rows="4" required></textarea>
-
-            <button type="button" onclick="addEntry()">Añadir Entrada</button>
-        </form>
-    </section>
-
-    <section class="section" id="entries">
-        <h2>Entradas del Blog</h2>
-        <div id="blogEntries">
-            <!-- Entradas aparecerán aquí -->
-        </div>
-    </section>
+   
 </div>
 
 <footer>
     <p>&copy; 2024 Reynaldo Villarreal</p>
 </footer>
 
-<script>
-    function addEntry() {
-        const title = document.getElementById('title').value;
-        const content = document.getElementById('content').value;
 
-        if (title && content) {
-            const newEntry = document.createElement('div');
-            newEntry.className = 'entry';
-
-            const entryTitle = document.createElement('h3');
-            entryTitle.textContent = title;
-            newEntry.appendChild(entryTitle);
-
-            const entryContent = document.createElement('p');
-            entryContent.textContent = content;
-            newEntry.appendChild(entryContent);
-
-            document.getElementById('blogEntries').appendChild(newEntry);
-            document.getElementById('blogForm').reset();
-        } else {
-            alert('Por favor, completa todos los campos.');
-        }
-    }
-</script>
 
 </body>
 </html>
